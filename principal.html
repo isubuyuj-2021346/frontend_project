@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Navbar Bootstrap</title>
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+        />
+        <link rel="stylesheet" href="main.css">
+    
+      </head>
+<body>
+    <header>
+      
+        <nav class="navbar navbar-expand-lg ">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="principal.html">Proyecto</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="principal.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#formulario">Formulario</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#Registro">Registros</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+    </header>
+    <div class="container-cards">
+    </div>
+    <div class="container-cards">
+        <a href="#" class="responsive-title">Prueba técnica </a>
+    </div>
+    <div class="container-cards">
+        <div class="card">
+            <div class="card-header">
+                <h3>HTML: Crea una página HTML que contenga</h3>
+            </div>
+            <div class="card-body">
+              <p>Un menú de navegación con al menos tres enlaces.</p>
+              <p>Una tabla para mostrar datos que se llenarán dinámicamente usando
+                JavaScript.</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">
+                <h3>CSS: Estiliza la página de manera que</h3>
+            </div>
+            <div class="card-body">
+              <p>La tabla tenga un diseño claro y legible.</p>
+              <p>El menú de navegación tenga un estilo atractivo.</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">
+                <h3>JavaScript: Implementa la lógica para:</h3>
+            </div>
+            <div class="card-body" >
+                <p>Utiliza un framework CSS como Bootstrap para facilitar el proceso de
+                    estilización y asegurar la responsividad.</p>
+              <p>Llenar la tabla con datos provenientes de un array de objetos.</p>
+            </div>
+          </div>
+      </div>
+      <br/>
+      <br/>
+    </div>
+    <!-- Tarjeta que contiene el formulario -->
+    <div class="contenedor" id="formulario">
+        <div class="card">
+            <div class="card-header">
+                <h3>Formulario de Contacto</h3>
+            </div>
+            <div class="card-body">
+                <form id="contactForm">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="age" class="form-label">Edad</label>
+                        <input type="number" class="form-control" id="age" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="city" class="form-label">Ciudad</label>
+                        <input type="text" class="form-control" id="city" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Agregar</button>
+                </form>
+                
+            </div>
+        </div>
+    </div>
+    <div class="contenedor" id="Registro">
+        <div class="card">
+            <div class="card-header">
+                <h3>Tabla de registros</h3>
+            </div>
+            <div class="card-body">
+                <table class="table table-hover mt-4">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Nombre</th>
+                            <th>Edad</th>
+                            <th>Ciudad</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="tableBody">
+                        <!-- Aquí se agregarán las filas dinámicamente -->
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    
+    <br/>
+    <br/>
+    <br/>
+    <script src="javascript/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
